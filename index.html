@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Number Guess</title>
+            <link rel="stylesheet" href="./src/css/style.css" />
+            <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css
+            "
+            />
+      </head>
+      <body>
+            <div class="container">
+                  <div class="row">
+                        <div class="title">
+                              <i class="fas fa-gamepad"></i>
+                              <h3>Number guessing game</h3>
+                              <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="infos">
+                              <p>
+                                    Try and guess a random number between <strong>1</strong> and
+                                    <strong> 100</strong>.
+                              </p>
+                              <p>You have 10 attempts to guess the right number.</p>
+                        </div>
+                        <div class="main">
+                              <h1>Guess a number</h1>
+                              <input
+                                    type="text"
+                                    onkeypress="return onlyEnterNumbers()"
+                                    maxlength="3"
+                                    required
+                                    class="GameInputValue"
+                              />
+                              <input type="submit" />
+                              <div class="previous-numbers">
+                                    <p>Previous Guesses:</p>
+                              </div>
+                              <p class="times">
+                                    Guesses Remaining:
+                                    <span>10</span>
+                              </p>
+                              <div class="alert"></div>
+                        </div>
+                  </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal-overlay open-modal">
+                  <div class="modal-container">
+                        <h3>Select your level</h3>
+                        <div class="game-btn">
+                              <button class="btn" data-id="easy">easy 0-10</button>
+                              <button class="btn" data-id="normal">normal 0-100</button>
+                              <button class="btn" data-id="hard">hard 0-500</button>
+                        </div>
+                  </div>
+            </div>
+            <!-- End Modal -->
+            <!-- top message -->
+            <div class="message-overlay">
+                  <div class="message-container">
+                        <h3 class="message-text"></h3>
+                        <div>
+                              <button>Ok</button>
+                        </div>
+                  </div>
+            </div>
+            <!-- End top message -->
+            <script src="./src/scripts/index.js"></script>
+      </body>
+</html>
