@@ -39,8 +39,8 @@ body {
 .modal-overlay .modal-container {
   background: #fff;
   border-radius: 10px;
-  width: 50vw;
-  height: 30vh;
+  width: 50%;
+  height: 150px;
   text-align: center;
   display: grid;
   place-items: center;
