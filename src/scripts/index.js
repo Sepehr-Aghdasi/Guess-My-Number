@@ -146,7 +146,7 @@ function calculate() {
                   submitBtn.style.backgroundColor = "transparent";
             }
       } else {
-            display(alertSection, "red", "#fff", "Fill the input", 100);
+            display(alertSection, "#ff7711", "#fff", "Fill the input", 100);
       }
 }
 
