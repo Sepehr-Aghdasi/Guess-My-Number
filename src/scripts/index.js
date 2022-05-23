@@ -50,14 +50,14 @@ function showModal() {
                               console.log(`Random Number is => ${randomNumber}`);
 
                               closeModal();
-                              showMessage("easy mode, select between 0 to 100");
+                              showMessage("normal mode, select between 0 to 100");
                               break;
                         case "hard":
                               randomNumber = generateNumber(hardMode);
                               console.log(`Random Number is => ${randomNumber}`);
 
                               closeModal();
-                              showMessage("easy mode, select between 0 to 500");
+                              showMessage("hard mode, select between 0 to 500");
                               break;
                         default:
                               console.log(`Error in showModal switch function`);
