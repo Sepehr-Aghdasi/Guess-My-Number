@@ -192,7 +192,7 @@ function checkIfDuplicateExists(arr) {
 }
 
 function showTimesLeft() {
-      if (counter === 0 && !randomNumber == previousNumbersArray[previousNumbersArray.length - 1]) {
+      if (counter === 0) {
             input.disabled = true;
             submitBtn.disabled = true;
 
